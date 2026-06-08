@@ -1,0 +1,199 @@
+{
+    "Round of 32": [
+        {
+            "home_team": "Czechia",
+            "away_team": "Korea Republic",
+            "winner": "Korea Republic",
+            "scoreline": "0-1 After Extra Time"
+        },
+        {
+            "home_team": "Switzerland",
+            "away_team": "Bosnia and Herzegovina",
+            "winner": "Switzerland",
+            "scoreline": "2-1 After Extra Time"
+        },
+        {
+            "home_team": "Brazil",
+            "away_team": "Morocco",
+            "winner": "Brazil",
+            "scoreline": "2-0"
+        },
+        {
+            "home_team": "T\u00fcrkiye",
+            "away_team": "USA",
+            "winner": "T\u00fcrkiye",
+            "scoreline": "1-0"
+        },
+        {
+            "home_team": "Germany",
+            "away_team": "C\u00f4te d'Ivoire",
+            "winner": "Germany",
+            "scoreline": "2-0"
+        },
+        {
+            "home_team": "Netherlands",
+            "away_team": "Japan",
+            "winner": "Netherlands",
+            "scoreline": "2-1"
+        },
+        {
+            "home_team": "Egypt",
+            "away_team": "Belgium",
+            "winner": "Belgium",
+            "scoreline": "0-1"
+        },
+        {
+            "home_team": "Spain",
+            "away_team": "Cabo Verde",
+            "winner": "Spain",
+            "scoreline": "3-2 After Extra Time"
+        },
+        {
+            "home_team": "France",
+            "away_team": "Norway",
+            "winner": "France",
+            "scoreline": "1-0"
+        },
+        {
+            "home_team": "Argentina",
+            "away_team": "Algeria",
+            "winner": "Algeria",
+            "scoreline": "2-2 After Extra Time (2-4 After Penalty Shootout)"
+        },
+        {
+            "home_team": "Portugal",
+            "away_team": "Colombia",
+            "winner": "Portugal",
+            "scoreline": "2-0"
+        },
+        {
+            "home_team": "England",
+            "away_team": "Croatia",
+            "winner": "England",
+            "scoreline": "1-0"
+        },
+        {
+            "home_team": "Ecuador",
+            "away_team": "Uruguay",
+            "winner": "Uruguay",
+            "scoreline": "2-3 After Extra Time"
+        },
+        {
+            "home_team": "Mexico",
+            "away_team": "Austria",
+            "winner": "Mexico",
+            "scoreline": "3-2 After Extra Time"
+        },
+        {
+            "home_team": "Panama",
+            "away_team": "Congo DR",
+            "winner": "Panama",
+            "scoreline": "2-1 After Extra Time"
+        },
+        {
+            "home_team": "Scotland",
+            "away_team": "Paraguay",
+            "winner": "Scotland",
+            "scoreline": "1-1 After Extra Time (5-4 After Penalty Shootout)"
+        }
+    ],
+    "Round of 16": [
+        {
+            "home_team": "Korea Republic",
+            "away_team": "Switzerland",
+            "winner": "Switzerland",
+            "scoreline": "1-1 After Extra Time (4-5 After Penalty Shootout)"
+        },
+        {
+            "home_team": "Brazil",
+            "away_team": "T\u00fcrkiye",
+            "winner": "Brazil",
+            "scoreline": "1-0"
+        },
+        {
+            "home_team": "Germany",
+            "away_team": "Netherlands",
+            "winner": "Germany",
+            "scoreline": "1-0 After Extra Time"
+        },
+        {
+            "home_team": "Belgium",
+            "away_team": "Spain",
+            "winner": "Spain",
+            "scoreline": "1-2"
+        },
+        {
+            "home_team": "France",
+            "away_team": "Algeria",
+            "winner": "Algeria",
+            "scoreline": "0-0 After Extra Time (4-5 After Penalty Shootout)"
+        },
+        {
+            "home_team": "Portugal",
+            "away_team": "England",
+            "winner": "Portugal",
+            "scoreline": "2-1 After Extra Time"
+        },
+        {
+            "home_team": "Uruguay",
+            "away_team": "Mexico",
+            "winner": "Uruguay",
+            "scoreline": "1-0"
+        },
+        {
+            "home_team": "Panama",
+            "away_team": "Scotland",
+            "winner": "Scotland",
+            "scoreline": "1-1 After Extra Time (3-4 After Penalty Shootout)"
+        }
+    ],
+    "Quarter-finals": [
+        {
+            "home_team": "Switzerland",
+            "away_team": "Brazil",
+            "winner": "Brazil",
+            "scoreline": "0-1"
+        },
+        {
+            "home_team": "Germany",
+            "away_team": "Spain",
+            "winner": "Spain",
+            "scoreline": "0-1 After Extra Time"
+        },
+        {
+            "home_team": "Algeria",
+            "away_team": "Portugal",
+            "winner": "Portugal",
+            "scoreline": "0-2"
+        },
+        {
+            "home_team": "Uruguay",
+            "away_team": "Scotland",
+            "winner": "Uruguay",
+            "scoreline": "0-0 After Extra Time (5-4 After Penalty Shootout)"
+        }
+    ],
+    "Semi-finals": [
+        {
+            "home_team": "Brazil",
+            "away_team": "Spain",
+            "winner": "Brazil",
+            "scoreline": "1-1 After Extra Time (5-4 After Penalty Shootout)"
+        },
+        {
+            "home_team": "Portugal",
+            "away_team": "Uruguay",
+            "winner": "Portugal",
+            "scoreline": "1-0"
+        }
+    ],
+    "Final": [
+        {
+            "home_team": "Brazil",
+            "away_team": "Portugal",
+            "winner": "Brazil",
+            "scoreline": "2-1 After Extra Time"
+        }
+    ],
+    "Champions": "Brazil"
+}
