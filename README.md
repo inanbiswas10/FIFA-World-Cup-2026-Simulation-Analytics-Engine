@@ -1,53 +1,63 @@
-# ⚽ FIFA World Cup 2026 Predictive Simulation Engine 🏆
+# FIFA World Cup 2026 AI Tournament Simulator:
 
-A data-driven, stateful simulation engine built in Python to forecast match outcomes and tournament progression for the expanded 48-team FIFA World Cup 2026. This project leverages historical international football metrics, probabilistic sports analytics, and dynamic state management to build public software architecture.
+An end-to-end predictive modeling and tournament execution engine built in Python. The system ingests authentic 48-team tournament structures, processes full group stage tables, filters wildcards and executes a single-elimination knockout state machine driven by a trained **Random Forest Classifier** core.
 
----
 
-## 🛠️ Project Architecture & Daily Progression
+## Predictive Analytics Matrix (Model Insights):
 
-### 🗓️ Day 1: Data Ingestion & Preprocessing Pipeline
-* **Robust Feature Ingestion:** Built a custom data pipeline using `pandas` to load, sanitize, and validate the official World Cup 2026 match schedule.
-* **Vectorized Data Handling:** Formatted critical match attributes including group boundaries, historical match metrics, venue vectors, and timezone-adjusted kickoff times (IST).
-* **Defensive Error Isolation:** Integrated structured exception-handling blocks (`try-except`) across the processing loop to isolate data structural formatting discrepancies without halting pipeline streaming.
+Rather than relying solely on historical bias, the engine evaluates real-time match variables using a trained Random Forest model. The relative feature importances from the latest championship simulation run break down as follows:
 
----
+| Input Feature Dimension | Relative Importance Weight | Architectural Impact |
+| :--- | :---: | :--- |
+| **Form Rating** | `38.25%` | Primary driver; heavily rewards real-time team momentum streaks. |
+| **Travel Fatigue** | `25.29%` | Dynamic stamina tax based on venue shifting and scheduling intervals. |
+| **Squad Value** | `20.22%` | Financial/market value representation of squad player depth features. |
+| **Rank Differential** | `16.25%` | Baseline historical performance weight tracking standard FIFA positions. |
 
-### 🗓️ Day 2: Probabilistic Match Simulation Core
-* **Poisson Distribution Integration:** Developed a core match simulator (`MatchSimulator`) using probabilistic models to evaluate offensive and defensive team strengths.
-* **Dynamic Score Matrix Generator:** Designed a scoring engine that models international football matches as random, independent statistical variables based on real-time team lambda scoring rates.
-* **Decoupled System Modules:** Maintained a clean, production-grade separation of concerns by isolating data ingestion mechanics (`pipeline.py`) completely from the mathematical simulation layers (`simulator.py`).
 
----
+## System Architecture & File Pipeline Details
 
-### 🗓️ Day 3: Stateful Tournament Engine & Advancement Vector Extraction
+The engine is built modularly across distinct functional domains to keep execution decoupled:
 
-#### System Architecture Evolution
-The `World_Cup_Schedule_Engine` has been refactored from a flat data parser into a stateful **Tournament Prediction Machine**. The architecture smoothly decouples data ingestion, in-memory state mutation, and conditional UI rendering.
+├── fixtures.csv               # Raw ingestion file containing 48-team schedule matrices
+├── schedule_engine.py         # Main pipeline controller, table processor & wildcard evaluator
+├── knockout_engine.py         # Elimination stage state machine with tie-breaker systems
+├── ml_engine.py               # Model core inference wrangler and feature vector scalers
+└── tournament_history.json    # Automated data persistence layer output (Saved tournament runs)
 
-#### Key Architectural Implementations:
-* **In-Memory State Tracking:** Engineered a multidimensional dictionary matrix (`self.standings`) to persist real-time tournament metrics—Games Played ($P$), Wins ($W$), Draws ($D$), Losses ($L$), Goals For ($GF$), Goals Against ($GA$), Goal Difference ($GD$), and Points ($Pts$)—across all 48 participating countries simultaneously.
-* **Defensive Memory Allocation:** Implemented a private initialization helper (`_initialize_team_standing`) to allocate team data structures dynamically during execution and prevent runtime initialization errors.
-* **Algorithmic Sorting Engine:** Integrated strict FIFA tie-breaker hierarchies. The system uses composite, multi-key Python `lambda` functions to sort group standings sequentially on the fly:
-  
-  $$\text{Total Points (Pts)} \rightarrow \text{Goal Difference (GD)} \rightarrow \text{Goals For (GF)}$$
 
-* **Advancement Vector Extraction:** Developed a decoupled extraction layer (`extract_group_qualifiers`) that programmatically slices indices `[0]` and `[1]` from each sorted group matrix to harvest the top 24 automatic qualifiers for the Round of 32.
-* **Scannable Terminal Dashboard:** Upgraded the UI presentation layer with context-switching variable monitors. The script dynamically injects vertical spacing boundaries upon detecting group transitions, delivering a highly readable console output.
+## Installation & Quickstart:
 
----
+1. Clone the Workspace Directory:
 
-## 💻 Tech Stack
-* **Language:** Python 3.x
-* **Data Libraries:** Pandas
-* **Mathematical Core:** SciPy / NumPy (Probabilistic Math)
-* **Version Control:** Git & GitHub Desktop
+git clone https://github.com/inanbiswas10/FIFA-World-Cup-2026-Simulation-Analytics-Engine.git
+cd FIFA-World-Cup-2026-Simulation-Analytics-Engine
 
----
+2. Install Pipeline Dependencies:
 
-## 🚀 How to Run the Project
-Ensure you have your environment dependencies installed, then execute the schedule engine script:
+pip install pandas numpy scikit-learn
 
-```bash
-pip install pandas scipy
+3. Execute the Simulation Loop:
+
 python schedule_engine.py
+
+
+## Sample Terminal Execution Log:
+
+🚀 FIFA World Cup 2026 Best 3rd Place Teams Qualification Scenario (Round Of 32) 🚀
+  Rank     Group              Team              Pts      GD      GF  
+----------------------------------------------------------------------
+   1         H              Uruguay              4       0       4   
+   2         E              Ecuador              4      -1       3   
+   3         J              Austria              3       0       3   
+
+🚀 FIFA World Cup 2026 Round of 32 Prediction (32 Teams) 🚀
+Spain                vs               Morocco    Winner: Spain                (3-1)
+Argentina            vs               Algeria    Winner: Argentina            (2-0)
+Germany              vs               Uruguay    Winner: Germany              (1-1 After Extra Time)
+France               vs                  Iran    Winner: France               (2-2 After Extra Time) (5-3 After Penalty Shootout)
+
+===========================================================================
+🏆👑 FIFA World Cup 2026 (USA, Canada, Mexico) Champions: SPAIN 👑🏆
+===========================================================================
+💾 File Saved Successfully: 'tournament_history.json' created in workspace root.
