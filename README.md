@@ -2,6 +2,7 @@
 
 An end-to-end predictive modeling and tournament execution engine built in Python. The system ingests authentic 48-team tournament structures, processes full group stage tables, filters wildcards and executes a single-elimination knockout state machine driven by a trained **Random Forest Classifier** core.
 
+---
 
 ## Predictive Analytics Matrix (Model Insights):
 
@@ -14,17 +15,18 @@ Rather than relying solely on historical bias, the engine evaluates real-time ma
 | **Squad Value** | `20.22%` | Financial/market value representation of squad player depth features. |
 | **Rank Differential** | `16.25%` | Baseline historical performance weight tracking standard FIFA positions. |
 
+---
 
 ## System Architecture & File Pipeline Details
 
 The engine is built modularly across distinct functional domains to keep execution decoupled:
 
+```text
 ├── fixtures.csv               # Raw ingestion file containing 48-team schedule matrices
 ├── schedule_engine.py         # Main pipeline controller, table processor & wildcard evaluator
 ├── knockout_engine.py         # Elimination stage state machine with tie-breaker systems
 ├── ml_engine.py               # Model core inference wrangler and feature vector scalers
 └── tournament_history.json    # Automated data persistence layer output (Saved tournament runs)
-
 
 ## Installation & Quickstart:
 
@@ -60,4 +62,4 @@ France               vs                  Iran    Winner: France               (2
 ===========================================================================
 🏆👑 FIFA World Cup 2026 (USA, Canada, Mexico) Champions: SPAIN 👑🏆
 ===========================================================================
-💾 File Saved Successfully: 'tournament_history.json' created in workspace root.
+💾 File Saved Successfully: 'tournament_history.json' created in workspace root. '''
