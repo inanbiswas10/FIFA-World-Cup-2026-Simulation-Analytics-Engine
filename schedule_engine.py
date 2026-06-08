@@ -268,7 +268,7 @@ if __name__ == "__main__":
     knockout_simulator = WorldCupKnockoutEngine (ai_predictor)
     knockout_simulator.run_knockout_stage (full_round_of_32_field)
 
-    print ("\n📊 FIFA World Cup 2026 Tournament Simulation Engine Machine Learning Model Insights (Random Forest) 📊")
+    print ("\n📊 FIFA World Cup 2026 Tournament Simulation Engine Machine Learning Model Insights (Random Forest) !!")
     
     importances = ai_predictor.model.feature_importances_
     feature_names = ["FIFA Ranking Differential","Squad Value Differential","Form Rating Differential","Travel Fatigue"]
