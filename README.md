@@ -1,4 +1,4 @@
-# FIFA World Cup 2026 AI Tournament Simulator:
+# FIFA World Cup 2026 AI Tournament Simulator
 
 An end-to-end predictive modeling and tournament execution engine built in Python. The system ingests authentic 48-team tournament structures, processes full group stage tables, filters wildcards and executes a single-elimination knockout state machine driven by a trained **Random Forest Classifier** core.
 
